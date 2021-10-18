@@ -3,8 +3,17 @@ const videoBox = document.querySelector ('.video-container');
 
 
 btn.forEach((button)=> {
-    button.addEventListener('click', (e)=> {
-        currentState = e.currentTarget.data.id;
+    button.addEventListener('click', (e)=> {;
+        const currentState = e.currentTarget.dataset.id;
+       
+        if (currentState === "pause") {
+            videoBox.pause();
+        }
+        else {
+            videoBox.play();
+        }
+
     });
-    console.log(currentState);
-})
+    
+    
+});

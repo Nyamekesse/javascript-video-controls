@@ -47,8 +47,7 @@ h1 {
     background-color: rgba(0,0,0,1);
     border-radius: 1rem;
 }
-.video-switch span:nth-child(1),
-.video-switch span:nth-child(2) {
+.video-switch span {
     color: #666;
     font-size: 1.4rem;
     text-transform: uppercase;
@@ -58,7 +57,7 @@ h1 {
 .video-switch span:nth-child(1) {
     margin-right: .8rem;
 }
-span.active {
+.video-switch span.active {
     color: #7ffdfd;
     font-size: 1.6rem;
 }
